@@ -2,6 +2,7 @@ body{
     padding: 0;
     margin: 0;
     font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 :root{
@@ -24,13 +25,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:var(--Dark-blue);
+    background-color:rgb(187, 215, 233);
+    /* opacity:0.9; */
 }
 
 /* empezamos a crear la card */
 
 .card{
-    width:65%;
+    width:320px;
     height:80%;
     /* background-color: red; */
     overflow: hidden;
@@ -56,10 +58,11 @@ body{
 .card-body{
     width:100%;
     height:calc( 100% - 35%);
-    background-color:var(--Pale-blue);
+    background-color:var(--Very-pale-blue);
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content:space-evenly;
 }
 
 .card-body_description{
@@ -90,7 +93,7 @@ body{
 .card-body_box{
     display: flex;
     flex-direction: column;
-    margin:0 4em 0 0;
+    margin:0 3.5em 0 0;
 }
 
 /* acomodamos los objetos de plan */
@@ -121,4 +124,19 @@ body{
 
 .button-cancel{
     cursor: pointer;
+}
+
+/* modo responsive para tabletas  */
+
+@media screen and (min-width:600px){
+
+    body{
+        font-size:2vh;
+    }
+
+    .card{
+        width:450px;
+    }
+
+
 }
