@@ -1,0 +1,124 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+:root{
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+}
+
+.attribution{
+    position: absolute;
+    bottom: 0;
+}
+
+.container{
+    width:100%;
+    height:100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--Dark-blue);
+}
+
+/* empezamos a crear la card */
+
+.card{
+    width:65%;
+    height:80%;
+    /* background-color: red; */
+    overflow: hidden;
+    border-radius:1em;
+}
+
+.card-header{
+   width:100%;
+   height:35%;
+   background-color: var(--Desaturated-blue);
+}
+
+.card-header_img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+/* terminamos la parte del header de la card */
+
+/* body */
+
+.card-body{
+    width:100%;
+    height:calc( 100% - 35%);
+    background-color:var(--Pale-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-body_description{
+    margin:2em 0 0 0;
+    text-align: center;
+    /* background-color: lime; */
+}
+
+.card-body_title{
+    margin: 0;
+}
+
+.card-body_paragraph{
+    color:var(--Desaturated-blue);
+}
+
+/* pasamos al card body plan  */
+
+.card-body_plan{
+    width:100%;
+    height:3em;
+    /* background-color: violet; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-body_box{
+    display: flex;
+    flex-direction: column;
+    margin:0 4em 0 0;
+}
+
+/* acomodamos los objetos de plan */
+
+.music-logo{
+    margin:0 1em 0 0;
+    filter:brightness(0.9);
+}
+
+/* pasamos al apartado de botones */
+
+.button-payment{
+    width:80%;
+    height:2.5em;
+    border-radius:1em;
+    background-color: var(--Bright-blue);
+    color:var(--Pale-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin:2em 0 0 0;
+}
+
+.button-payment:hover{
+    opacity:0.8;
+}
+
+.button-cancel{
+    cursor: pointer;
+}

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/style.css">
   
   <title>Frontend Mentor | Order summary card</title>
 
@@ -16,18 +17,37 @@
 </head>
 <body>
 
-  Order Summary prueba dads
+  <main class="container">
+    <article class="card">
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+      <div class="card-header">
+        <img src="/images/illustration-hero.svg" alt="" class="card-header_img">
+      </div>
 
-  Annual Plan
-  $59.99/year
+      <div class="card-body">
 
-  Change
+        <div class="card-body_description">
+        <h2 class="card-body_title">Order Summary</h2>
+        <p class="card-body_paragraph">You can now listen to millions of songs,<br> audiobooks, and podcasts on any 
+          device<br> anywhere you like!</p>
+        </div>
 
-  Proceed to Payment
-  Cancel Order
+        <div class="card-body_plan">
+          <img src="/images/icon-music.svg" alt="" class="music-logo">
+          <div class="card-body_box"><span>Annual Plan</span> $59.99/year</div>
+          <a href="#" class="link-change">Change</a>
+          </div>
+
+          <!-- botones -->
+
+          <div class="button-payment">Proceed to Payment</div>
+          <p class="button-cancel">Cancel Order</p>
+
+      </div>
+
+    </article>
+  </main>
+
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
